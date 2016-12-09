@@ -1,0 +1,58 @@
+<!--
+@license
+Copyright (c) 2016 The Polymer Project Authors. All rights reserved.
+This code may only be used under the BSD style license found at http://polymer.github.io/LICENSE.txt
+The complete set of authors may be found at http://polymer.github.io/AUTHORS.txt
+The complete set of contributors may be found at http://polymer.github.io/CONTRIBUTORS.txt
+Code distributed by Google as part of the polymer project is also
+subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
+-->
+
+<link rel="import" href="../bower_components/polymer/polymer.html">
+<link rel="import" href="../bower_components/iron-image/iron-image.html">
+<link rel="import" href="shared-styles.html">
+
+<dom-module id="home-boat">
+  <template>
+    <style include="shared-styles">
+      :host {
+        display: block;
+
+        padding: 10px;
+      }
+
+      iron-image{
+    display: block;
+    margin: auto;
+  }
+
+    </style>
+
+    <div class="card">
+      <div class="circle">James</div>
+      <h1>The boat</h1>
+      <p>Le plus jolie</p>
+      <iron-image style="width:420px; height:650px; background-color: lightgray;" sizing="cover" preload
+      src="./boat/630_lateral.jpg"></iron-image>
+      <br>
+
+      <iron-image style="width:650px; height:420px; background-color: lightgray;" sizing="cover" preload
+      src="./boat/630_arriere.jpg"></iron-image>
+      <br>
+
+      <iron-image style="width:400px; height:400px; background-color: lightgray;" sizing="cover" preload
+      src="./boat/630_de_face.jpg"></iron-image>
+      <br>
+      <iron-image style="width:400px; height:400px; background-color: lightgray;" sizing="cover" preload
+      src="./boat/630_cockpit.jpg"></iron-image>
+      <br>
+      <iron-image style="width:400px; height:400px; background-color: lightgray;" sizing="cover" preload
+      src="./boat/630Avant.jpg"></iron-image>    </div>
+  </template>
+
+  <script>
+    Polymer({
+      is: 'home-boat'
+    });
+  </script>
+</dom-module>
